@@ -1,32 +1,29 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Калькулятор</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Калькулятор</title>
+    <link rel="stylesheet" href="C:\Users\User\Desktop\js-DOM1\js-DOM1\src\style.css">
 </head>
 <body>
-  <div class="calculator">
-    <input type="text" id="number1" placeholder="Число 1">
-    <input type="text" id="number2" placeholder="Число 2">
-    <div id="result">Результат: </div>
-    <div class="buttons">
-      <button onclick="clearFields()">C</button>
-      <button onclick="deleteLast()">⌫</button>
-      <button onclick="addBracket('(')">(</button>
-      <button onclick="addBracket(')')">)</button>
-      <button onclick="calculate('/')">÷</button>
-      <button onclick="calculate('*')">×</button>
-      <button onclick="calculate('-')">−</button>
-      <button onclick="calculate('+')">+</button>
-      <button onclick="calculate('%')">%</button>
-      <button onclick="addComma()">,</button>
-      <button id="equals" onclick="equals()">=</button>
+    <div class="calculator">
+        <input type="text" id="number1" placeholder="Число 1">
+        <input type="text" id="number2" placeholder="Число 2">
+        <input type="text" id="result" placeholder="Результат" readonly>
+
+        <div class="buttons">
+            <button onclick="calculate('+')">+</button>
+            <button onclick="calculate('-')">-</button>
+            <button onclick="calculate('*')">*</button>
+            <button onclick="calculate('/')">/</button>
+            <button onclick="clearAll()">C</button>
+            <button onclick="clearLast()">CE</button>
+        </div>
     </div>
-  </div>
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
+
 
 

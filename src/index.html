@@ -1,39 +1,32 @@
 <!DOCTYPE html>
 <html lang="uk">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Калькулятор</title>
-        <link rel="stylesheet" href="style.css" />
-    </head>
-    <body>
-        <div class="calculator">
-            <input type="text" id="expression" placeholder="Введіть вираз" />
-            <div id="result">Результат:</div>
-            <div class="buttons">
-                <button onclick="clearField()">C</button>
-                <button onclick="deleteLast()">⌫</button>
-                <button onclick="addToExpression('(')">(</button>
-                <button onclick="addToExpression(')')">)</button>
-                <button onclick="addToExpression('/')">/</button>
-                <button onclick="addToExpression('*')">*</button>
-                <button onclick="addToExpression('-')">-</button>
-                <button onclick="addToExpression('+')">+</button>
-                <button onclick="addToExpression('%')">%</button>
-                <button onclick="addToExpression(7)">7</button>
-                <button onclick="addToExpression(8)">8</button>
-                <button onclick="addToExpression(9)">9</button>
-                <button onclick="addToExpression(4)">4</button>
-                <button onclick="addToExpression(5)">5</button>
-                <button onclick="addToExpression(6)">6</button>
-                <button onclick="addToExpression(1)">1</button>
-                <button onclick="addToExpression(2)">2</button>
-                <button onclick="addToExpression(3)">3</button>
-                <button onclick="addToExpression('.')">.</button>
-                <button onclick="addToExpression(0)">0</button>
-                <button id="equals" onclick="equals()">=</button>
-            </div>
-        </div>
-        <script src="script.js"></script>
-    </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Калькулятор</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="calculator">
+    <input type="text" id="number1" placeholder="Число 1">
+    <input type="text" id="number2" placeholder="Число 2">
+    <div id="result">Результат: </div>
+    <div class="buttons">
+      <button onclick="clearFields()">C</button>
+      <button onclick="deleteLast()">⌫</button>
+      <button onclick="addBracket('(')">(</button>
+      <button onclick="addBracket(')')">)</button>
+      <button onclick="calculate('/')">÷</button>
+      <button onclick="calculate('*')">×</button>
+      <button onclick="calculate('-')">−</button>
+      <button onclick="calculate('+')">+</button>
+      <button onclick="calculate('%')">%</button>
+      <button onclick="addComma()">,</button>
+      <button id="equals" onclick="equals()">=</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
 </html>
+
+
